@@ -86,15 +86,15 @@ va_list list, char buffer[], int flags, int width, int precision, int size);
 
 int print_char(va_list types, char buffer[],
 
-	int flags, int width, int precision, int size);
+int flags, int width, int precision, int size);
 
 int print_string(va_list types, char buffer[],
 
-	int flags, int width, int precision, int size);
+int flags, int width, int precision, int size);
 
 int print_percent(va_list types, char buffer[],
 
-	int flags, int width, int precision, int size);
+int flags, int width, int precision, int size);
 
 
 
@@ -218,6 +218,6 @@ long int convert_size_number(long int num, int size);
 
 long int convert_size_unsgnd(unsigned long int num, int size);
 
-
+void print_buffer(char buffer[], int *buff_ind);
 
 #endif /* MAIN_H */
